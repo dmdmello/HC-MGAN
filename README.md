@@ -86,7 +86,7 @@ When running the experiment, you need to specify path/to/data as a value for the
 DO NOT USE path/to/data/Stanford_Online_Products as a value for --dataset-path or SOP won't be found. 
 MAKE SURE the SOP root folder is NAMED EXACTLY as "Stanford_Online_Products", or it won't be found either. 
 
-Optionally, you might rename each class folder inside "Stanford_Online_Products" to remove the "_final" suffix, so that the tables and logs printed by our program look a lot cleaner:
+Optionally, you might rename each class folder inside "Stanford_Online_Products" to remove the "_final" suffix, so that the tables and logs printed by our program look a lot cleaner, as the class names are obtained according to each folder name:
 ```
 $ mv bicycle_final bicycle
 $ mv cabinet_final cabinet
