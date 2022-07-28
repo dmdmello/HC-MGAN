@@ -66,7 +66,7 @@ It's encouraged to activate AMP (automatic mixed precision) when running each ex
 ```
 $ python fmnist.py --dataset_path=path/to/data --amp-enable
 ```
-To activate AMP on the notebook, set the "use_amp" boolean variable to true.
+To activate AMP on the notebook, set the "amp_enable" boolean variable to true.
 
 ## Getting the Datasets
 
