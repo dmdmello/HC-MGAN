@@ -62,13 +62,11 @@ The code assumes an available GPU, and the default device is set to 0.
 
 To use another device whose index is X, specify as an argument --device=X for the .py experiments or change the "device" variable value to X in the notebook experiments.
 
-It's encouraged to activate AMP (automatic mixed precision) when running each experiment, as it makes the code run a lot faster on modern GPUs.  
-
-To activate AMP with the .py experiments, provide --amp_enable as an argument, for example:
-
+It's encouraged to activate AMP (automatic mixed precision) when running each experiment, as it makes the code run a lot faster on modern GPUs.  To activate AMP with the .py experiments, provide --amp_enable as an argument, for example:
+```
 $ python fmnist.py --dataset_path=path/to/data --amp-enable
-
-To activate AMP on the notebook, set the "device" boolean variable to true.
+```
+To activate AMP on the notebook, set the "use_amp" boolean variable to true.
 
 ## Getting the Datasets
 
