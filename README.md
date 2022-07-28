@@ -8,17 +8,17 @@ Reproducing experiments on python is straightforward. Provided the datasets are 
 (with the only required argument being the dataset folder where the main folder of all required datasets are located).
 
 To reproduce FMNIST:
-
+```
 $ python fmnist.py --dataset_path=path/to/data
-
+```
 To reproduce MNIST :
-
+```
 $ python mnist.py --dataset_path=path/to/data
-
+```
 To reproduce SOP :
-
+```
 $ python sop.py --dataset_path=path/to/data
-
+```
 If you wish to select different arguments, use --help to view other options.
 
 
@@ -76,20 +76,20 @@ To activate AMP on the notebook, set the "device" boolean variable to true.
 SOP has to be downloaded manually at http://ftp.cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip.
 Additionally, the images of SOP need to be resized to 32x32 resolution, and the classes "kettle" and "lamp" need to be removed as mentioned in the paper. 
 The following linux commands are sufficient to obtain this dataset as we used in our experiments (for resizing we use the "mogrify" command from "ImageMagick", so you need to have ImageMagick installed):
-
+```
 $ wget 'http://ftp.cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip'
 $ unzip Stanford_Online_Products.zip -d path/to/data/
 $ cd path/to/data/Stanford_Online_Products
 $ rm -r kettle_final
 $ rm -r lamp_final
 $ find . -name '*.JPG' -execdir mogrify -resize 32x32! {} +
-
+```
 When running the experiment, you need to specify path/to/data as a value for the argument --dataset-path, that is, the path where the SOP root folder named exactly "Stanford_Online_Products" is located. 
 DO NOT USE path/to/data/Stanford_Online_Products as a value for --dataset-path or SOP won't be found. 
 MAKE SURE the SOP root folder is NAMED EXACTLY as "Stanford_Online_Products", or it won't be found either. 
 
 Optionally, you might rename each class folder inside "Stanford_Online_Products" to remove the "_final" suffix, so that the tables and logs printed by our program look a lot cleaner:
-
+```
 $ mv bicycle_final bicycle
 $ mv cabinet_final cabinet
 $ mv chair_final chair
@@ -100,7 +100,7 @@ $ mv sofa_final sofa
 $ mv stapler_final stapler
 $ mv table_final table
 $ mv toaster_final toaster
-
+```
 
 ### MNIST and FMNIST 
 
