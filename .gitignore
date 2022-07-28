@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+ipynb_checkpoints/
+data/
+backups/
+experiments/
+experiment_logs*
+.ipynb_checkpoints/
+data/
+experiment*
