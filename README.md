@@ -72,7 +72,7 @@ To activate AMP on the notebook, set the "device" boolean variable to true.
 
 ## Getting the Datasets
 
-###SOP
+### SOP
 SOP has to be downloaded manually at http://ftp.cs.stanford.edu/cs/cvgl/Stanford_Online_Products.zip.
 Additionally, the images of SOP need to be resized to 32x32 resolution, and the classes "kettle" and "lamp" need to be removed as mentioned in the paper. 
 The following linux commands are sufficient to obtain this dataset as we used in our experiments (for resizing we use the "mogrify" command from "ImageMagick", so you need to have ImageMagick installed):
@@ -102,13 +102,13 @@ $ mv table_final table
 $ mv toaster_final toaster
 
 
-###MNIST and FMNIST 
+### MNIST and FMNIST 
 
 If you have already downloaded either MNIST or FMNIST with pytorch, just use the path to the folder where the root folder of each dataset is located.
 If you haven't downloaded either, you can use any folder as --dataset-path and the program will automatically download MNIST or FMNIST to this path and read them from there. 
 
 
-##Requirements
+## Requirements
 
 This code was executed using pytorch 1.9 and 1.10, and it requires a GPU (as mentioned earlier, you can use the --device argument when running each experiment to set a specific device).
 
@@ -117,6 +117,6 @@ We recommend installing everything with miniconda, and what can't be find with m
 
 Results are much better visualized in jupyter notebooks (jupyter notebooks for the three experiments sop.ipynb, mnist.ipynb, fmnist.ipynb are provided).
 
-##Problems with the Code
+## Problems with the Code
 
 Contact me immediatelly (dani-dmello@hotmail.com) if you have any trouble running the code. It's likely that unpredictable issues will be present during the first few days we realease the code before we have time to fix them. 
