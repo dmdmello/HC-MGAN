@@ -117,4 +117,4 @@ Results are much better visualized in jupyter notebooks (jupyter notebooks for t
 
 ## Problems with the Code
 
-Contact me immediatelly (dani-dmello@hotmail.com) if you have any trouble running the code. It's likely that unpredictable issues will be present during the first few days we realease the code before we have time to fix them. 
+Contact me immediatelly (dani-dmello@hotmail.com) if you have any trouble running the code. It's likely that unpredictable issues will be present during the first days past the code's realease.
