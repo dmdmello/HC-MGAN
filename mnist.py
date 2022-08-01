@@ -70,7 +70,7 @@ parser.add_argument('--epochs_refinement', type=int, default=100,
                         metavar='', help='Number of epochs for refinement training')
 parser.add_argument('--diversity_parameter_g', type=float, default=1.0,
                         metavar='', help="Hyperparameter for weighting generators' classification loss component")
-parser.add_argument('--no_refinements', type=int, default=8,
+parser.add_argument('--no_refinements', type=int, default=6,
                         metavar='', help='Number of refinements in each split')
 parser.add_argument('--no_splits', type=int, default=9,
                         metavar='', help='Number of splits during tree growth')
