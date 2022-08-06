@@ -62,9 +62,9 @@ parser.add_argument('--b2', type=float, default=0.999,
                         metavar='', help='Adam optimizer beta 2 parameter')
 parser.add_argument('--noise_start', type=float, default=1.5,
                         metavar='', help='Start image noise intensity linearly decaying throughout each GAN/MGAN training')
-parser.add_argument('--epochs_raw_split', type=int, default=100,
+parser.add_argument('--epochs_raw_split', type=int, default=150,
                         metavar='', help='Number of epochs for raw split training')
-parser.add_argument('--epochs_refinement', type=int, default=100,
+parser.add_argument('--epochs_refinement', type=int, default=150,
                         metavar='', help='Number of epochs for refinement training')
 parser.add_argument('--diversity_parameter_g', type=float, default=1.0,
                         metavar='', help="Hyperparameter for weighting generators' classification loss component")
