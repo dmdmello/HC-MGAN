@@ -13,9 +13,7 @@ class MyDataset(Dataset):
         self.targets = dataset.targets
         
     def __getitem__(self, index):
-        data, target = self.dataset[index]
-        # Your transformations here (or set it in CIFAR10)
-        
+        data, target = self.dataset[index]        
         return data, target, index
 
     def __len__(self):
