@@ -64,7 +64,7 @@ def create_dataloader(dataset, test = False, batch_size = 100,  path='../data/')
                               transforms.Normalize([.5],[.5],[.5])
                           ])),
            batch_size=batch_size, shuffle=False, drop_last=True, sampler=sampler)        
-        dataloader.dataset.classes = ['one', 'two', 'three', 'four', 'five','six', 'seven', 'eight', 'nine', 'ten']
+        dataloader.dataset.classes = ['zero', 'one', 'two', 'three', 'four', 'five','six', 'seven', 'eight', 'nine']
         
     elif dataset =='sop':
         sampler = torch.utils.data.WeightedRandomSampler(weights=[1], num_samples=batch_size, replacement=True, generator=None)
