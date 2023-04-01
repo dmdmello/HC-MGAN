@@ -111,7 +111,7 @@ If you haven't downloaded either, you can use any folder as --dataset-path and t
 This code was executed using pytorch 1.9 and 1.10, and it requires a GPU (as mentioned earlier, you can use the --device argument when running each experiment to set a specific device).
 
 Main required packages are pandas, matplotlib, tqdm, scikit-learn, scipy, torchvision, but a few more might be required. 
-We recommend installing everything with miniconda, and what can't be find with miniconda, installed with pip.
+We recommend installing everything with miniconda, and what can't be found with miniconda, installed with pip.
 
 Results are much better visualized in jupyter notebooks (jupyter notebooks for the three experiments sop.ipynb, mnist.ipynb, fmnist.ipynb are provided).
 
